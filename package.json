@@ -1,0 +1,23 @@
+{
+    "name": "tplink-toggle-light-by-ip",
+    "version": "1.0.0",
+    "description": "A REST API to toggle TP-Link Smart bulbs",
+    "main": "server.js",
+    "dependencies": {
+      "express": "^4.17.2",
+      "pm2": "^5.1.2",
+      "tplink-smarthome-api": "^4.1.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "pm2 start server.js",
+      "save": "pm2 save",
+      "startup": "pm2 startup -u root",
+      "stop": "pm2 stop server.js",
+      "build": "webpack",
+      "log": "pm2 log"
+    },
+    "author": "",
+    "license": "ISC"
+  }
